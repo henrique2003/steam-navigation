@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Navbar and Sidebar Example</title>
+</head>
+
+<body>
+  <div class="flex">
+    <aside class="text-white w-1/6 h-screen px-2 pt-5" id="sidebar">
+      <div class="logo p-5">
+        <a href="#" class="text-lg font-bold">Steam</a>
+      </div>
+      <ul class="px-2 mt-6">
+        <a href="#" class="px-4 py-2 flex gap-3 items-center active">
+          <div class="border-active"></div>
+          <i class="fa-solid fa-credit-card"></i>
+          <li>Game store</li>
+        </a>
+        <a href="#" class="px-4 py-2 flex gap-3 items-center">
+          <div class="border-active"></div>
+          <i class="fa-solid fa-grip"></i>
+          <li>Library</li>
+        </a>
+        <a href="#" class="px-4 py-2 flex gap-3 items-center">
+          <div class="border-active"></div>
+          <i class="fa-solid fa-comments"></i>
+          <li>Community</li>
+        </a>
+        <a href="#" class="px-4 py-2 flex gap-3 items-center">
+          <div class="border-active"></div>
+          <i class="fa-solid fa-square-person-confined"></i>
+          <li>Friends</li>
+        </a>
+      </ul>
+      <div class="bottom">
+        <ul class="px-2 mt-6">
+          <a href="#" class="px-4 py-2 flex gap-3 items-center">
+            <div class="border-active"></div>
+            <i class="fa-solid fa-gear"></i>
+            <li>Settings</li>
+          </a>
+          <a href="#" class="px-4 py-2 flex gap-3 items-center">
+            <div class="border-active"></div>
+            <i class="fa-solid fa-comment-medical"></i>
+            <li>Help</li>
+          </a>
+        </ul>
+        <div class="card-chat flex items-center justify-center float-right mt-10">
+          <p>Friend chat and Groups</p>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+    </aside>
+
+    <main class="w-5/6">
+      <header class="text-white bg-transparent pr-7 mt-5">
+        <nav class="container mx-auto flex items-center justify-between py-4">
+          <div class="search flex gap-2 items-center">
+            <img src="./images/pesquisa.png" alt="">
+            <input type="text" placeholder="Search orders" class="placeholder-white text-white bg-transparent">
+          </div>
+          <div class="actions flex justify-between">
+            <div class="flex gap-5">
+              <a href="#" class="notifications rounded-3xl flex items-center justify-center">
+                <div class="circle rounded-3xl border-white w-3 h-3"></div>
+                <i class="fa-sharp fa-regular fa-bell"></i>
+              </a>
+              <a href="#" class="box rounded-3xl p-2">
+                <img src="./images/cesta-de-compras.png" alt="">
+              </a>
+              <a href="#" class="user flex justify-center items-center">
+                <div class="avatar rounded-3xl">
+                  <img src="./images/avatar.png" alt="">
+                </div>
+                <p class="name ml-3">Jenny Wilson
+                </p>
+                <i class="fa-solid fa-chevron-down ml-4"></i>
+              </a>
+            </div>
+            <div class="mr-4 mt-1 ml-3">
+              <button class="text-white focus:outline-none lg:hidden" id="btn_toggle_sidebar">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                  </path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </main>
+  </div>
+
+  <script src="https://kit.fontawesome.com/fde5426bbc.js" crossorigin="anonymous"></script>
+
+  <script src="./sidebar.js"></script>
+</body>
+
+</html>
