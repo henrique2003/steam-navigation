@@ -11,40 +11,42 @@
 
 <body>
   <div class="flex">
-    <aside class="text-white w-1/6 h-screen px-2 pt-5" id="sidebar">
-      <div class="logo p-5">
-        <a href="#" class="text-lg font-bold">Steam</a>
+    <aside class="text-white w-1/6 h-screen" id="sidebar">
+      <div class="top">
+        <div class="logo py-8 px-5">
+          <a href="#" class="text-lg font-bold">Steam</a>
+        </div>
+        <ul class="px-5 mt-6 flex flex-col gap-5">
+          <a href="#" class="flex gap-3 items-center active">
+            <div class="border-active"></div>
+            <i class="fa-solid fa-credit-card"></i>
+            <li>Game store</li>
+          </a>
+          <a href="#" class="flex gap-3 items-center">
+            <div class="border-active"></div>
+            <i class="fa-solid fa-grip"></i>
+            <li>Library</li>
+          </a>
+          <a href="#" class="flex gap-3 items-center">
+            <div class="border-active"></div>
+            <i class="fa-solid fa-comments"></i>
+            <li>Community</li>
+          </a>
+          <a href="#" class="flex gap-3 items-center">
+            <div class="border-active"></div>
+            <i class="fa-solid fa-square-person-confined"></i>
+            <li>Friends</li>
+          </a>
+        </ul>
       </div>
-      <ul class="px-2 mt-6">
-        <a href="#" class="px-4 py-2 flex gap-3 items-center active">
-          <div class="border-active"></div>
-          <i class="fa-solid fa-credit-card"></i>
-          <li>Game store</li>
-        </a>
-        <a href="#" class="px-4 py-2 flex gap-3 items-center">
-          <div class="border-active"></div>
-          <i class="fa-solid fa-grip"></i>
-          <li>Library</li>
-        </a>
-        <a href="#" class="px-4 py-2 flex gap-3 items-center">
-          <div class="border-active"></div>
-          <i class="fa-solid fa-comments"></i>
-          <li>Community</li>
-        </a>
-        <a href="#" class="px-4 py-2 flex gap-3 items-center">
-          <div class="border-active"></div>
-          <i class="fa-solid fa-square-person-confined"></i>
-          <li>Friends</li>
-        </a>
-      </ul>
       <div class="bottom">
-        <ul class="px-2 mt-6">
-          <a href="#" class="px-4 py-2 flex gap-3 items-center">
+        <ul class="px-5 mt-6 flex flex-col gap-5">
+          <a href="#" class="flex gap-3 items-center">
             <div class="border-active"></div>
             <i class="fa-solid fa-gear"></i>
             <li>Settings</li>
           </a>
-          <a href="#" class="px-4 py-2 flex gap-3 items-center">
+          <a href="#" class="flex gap-3 items-center">
             <div class="border-active"></div>
             <i class="fa-solid fa-comment-medical"></i>
             <li>Help</li>
@@ -57,8 +59,8 @@
       </div>
     </aside>
 
-    <main class="w-5/6">
-      <header class="text-white bg-transparent pr-7 mt-5">
+    <div class="w-full page">
+      <header class="text-white bg-transparent mt-5">
         <nav class="container mx-auto flex items-center justify-between py-4">
           <div class="search flex gap-2 items-center">
             <img src="./images/pesquisa.png" alt="">
@@ -83,7 +85,7 @@
               </a>
             </div>
             <div class="mr-4 mt-1 ml-3">
-              <button class="text-white focus:outline-none lg:hidden" id="btn_toggle_sidebar">
+              <button class="text-white focus:outline-none" id="btn_toggle_sidebar">
                 <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
@@ -94,7 +96,10 @@
           </div>
         </nav>
       </header>
-    </main>
+      <main>
+
+      </main>
+    </div>
   </div>
 
   <script src="https://kit.fontawesome.com/fde5426bbc.js" crossorigin="anonymous"></script>
